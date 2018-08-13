@@ -1,4 +1,5 @@
 import React from 'react'
+import Event from '../components/event'
 
 export default ({ data }) => {
   return (
@@ -13,11 +14,7 @@ export default ({ data }) => {
         }}
       >
         {data.allWordpressWpEvents.edges.map(({ node }, index) => (
-          <div key={index}>
-            <img src={node.featured_media.source_url} alt={node.title} />
-            <h3>{node.title}</h3>
-            <p>{node.acf.event_date}</p>
-          </div>
+          <Event key={index} event={node} />
         ))}
       </div>
     </div>
