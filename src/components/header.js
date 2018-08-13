@@ -20,12 +20,15 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             textDecoration: 'none',
+            border: 0,
+            backgroundImage: 'none',
           }}
         >
           <img
             src="http://www.dsmwebgeeks.com/app/uploads/2016/05/webgeeks.png"
             alt="Web Geeks logo"
-            style={{ maxHeight: '50px', marginBottom: 0 }}/>
+            style={{ maxHeight: '50px', marginBottom: 0 }}
+          />
         </Link>
       </h1>
     </div>
