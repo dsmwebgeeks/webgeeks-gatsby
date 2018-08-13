@@ -1,14 +1,15 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "dsmwebgeeks-gatsby",
+  "description": "Des Moines Web Geeks Gatsby site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Joshua Larson <jplhomer@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-source-wordpress": "^2.0.93",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "serve": "^9.4.2"
   },
   "keywords": [
     "gatsby"
@@ -18,7 +19,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve public/"
   },
   "devDependencies": {
     "prettier": "^1.13.7"
