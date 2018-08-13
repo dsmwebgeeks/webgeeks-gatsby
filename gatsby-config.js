@@ -1,19 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Des Moines Web Geeks',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-source-wordpress",
+      resolve: 'gatsby-source-wordpress',
       options: {
         /*
          * The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
          * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
          */
-        baseUrl: "dsmwebgeeks.com",
+        baseUrl: 'dsmwebgeeks.com',
         // The protocol. This can be http or https.
-        protocol: "http",
+        protocol: 'http',
         // Indicates whether the site is hosted on wordpress.com.
         // If false, then the assumption is made that the site is self hosted.
         // If true, then the plugin will source its content on wordpress.com using the JSON REST API V2.
@@ -34,8 +34,8 @@ module.exports = {
         // See: https://github.com/isaacs/minimatch
         // Example:  `["/*/*/comments", "/yoast/**"]` will exclude routes ending in `comments` and
         // all routes that begin with `yoast` from fetch.
-        excludedRoutes: ["/*/*/comments", "/yoast/**"]
-      }
-    }
+        excludedRoutes: ['/*/*/comments', '/yoast/**'],
+      },
+    },
   ],
 }
