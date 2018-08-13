@@ -6,13 +6,7 @@ export default ({ data }) => {
     <div>
       <h1>What events are coming up?</h1>
 
-      <div
-        style={{
-          display: 'grid',
-          gridGap: '1em',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(250px,1fr))',
-        }}
-      >
+      <div>
         {data.allWordpressWpEvents.edges.map(({ node }, index) => (
           <Event key={index} event={node} />
         ))}
