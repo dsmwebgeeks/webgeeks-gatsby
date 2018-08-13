@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#efefef',
       marginBottom: '1.45rem',
     }}
   >
@@ -19,11 +19,13 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: 'white',
             textDecoration: 'none',
           }}
         >
-          {siteTitle}
+          <img
+            src="http://www.dsmwebgeeks.com/app/uploads/2016/05/webgeeks.png"
+            alt="Web Geeks logo"
+            style={{ maxHeight: '50px', marginBottom: 0 }}/>
         </Link>
       </h1>
     </div>
