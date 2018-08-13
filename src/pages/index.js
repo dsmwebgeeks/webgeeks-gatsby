@@ -1,14 +1,15 @@
 import React from 'react'
 import Event from '../components/event'
+import styles from './index.module.css'
 
 export default ({ data }) => {
   return (
     <div>
-      <h1>What events are coming up?</h1>
+      <h1 className={styles.heading}>What events are coming up?</h1>
 
       <div>
         {data.allWordpressWpEvents.edges.map(({ node }, index) => (
-          <Event key={index} event={node} />
+          <Event className={styles.event} key={index} event={node} />
         ))}
       </div>
     </div>

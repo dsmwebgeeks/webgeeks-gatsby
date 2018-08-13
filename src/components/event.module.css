@@ -1,0 +1,11 @@
+.thumbnail {
+  height: 120px;
+  width: 275px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 2em;
+}
+
+.title {
+  margin-top: 0;
+}
