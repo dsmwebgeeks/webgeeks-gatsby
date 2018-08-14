@@ -38,9 +38,9 @@ export default ({ data }) => {
 
 function upcomingEvents(events) {
   const today = moment().startOf('day')
-  return events.filter(
-    event => getDateObjectFromEvent(event.node).startOf('day') >= today
-  )
+  return events
+    .filter(event => getDateObjectFromEvent(event.node).startOf('day') >= today)
+    .sort((a, b) => a.node.acf.event_date - b.node.acf.event_date)
 }
 
 function pastEvents(events) {
