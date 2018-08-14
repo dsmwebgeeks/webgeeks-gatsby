@@ -12,14 +12,15 @@ export default ({ event, ...props }) => (
     <div className={styles.meta}>
       <h3 className={styles.title}>{event.title}</h3>
       <p className={styles.date}>
-        {getDateObject(event.acf.event_date, event.acf.event_time).format(
-          'LLL'
-        )}
+        {getDateObjectFromEvent(event).format('LLL')}
       </p>
     </div>
   </div>
 )
 
-function getDateObject(date, time) {
+export function getDateObjectFromEvent(event) {
+  const {
+    acf: { event_date: date, event_time: time },
+  } = event
   return moment(`${date} ${time}`, 'YYYYMMDD h:mma')
 }
