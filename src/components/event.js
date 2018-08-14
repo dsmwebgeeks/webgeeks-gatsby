@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styles from './event.module.css'
 import moment from 'moment'
 
@@ -10,7 +11,9 @@ export default ({ event, ...props }) => (
       alt={event.title}
     />
     <div className={styles.meta}>
-      <h3 className={styles.title}>{event.title}</h3>
+      <h3 className={styles.title}>
+        <Link to={`/events/${event.slug}`}>{event.title}</Link>
+      </h3>
       <p className={styles.date}>
         {getDateObjectFromEvent(event).format('LLL')}
       </p>
