@@ -4,5 +4,10 @@
 
 .event {
   margin-bottom: 2rem;
-  display: flex;
+}
+
+@media (min-width: 600px) {
+  .event {
+    display: flex;
+  }
 }
